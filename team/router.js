@@ -15,7 +15,7 @@ router.get("/team", (req, res, next) => {
     .catch(next);
 });
 
-// Get a single team
+// Get a specific team
 
 router.get("/team/:id", (req, res, next) => {
   Team.findByPk(req.params.id)
